@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supplies</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="places-visited.html">Visited</a>
+        <a href="places-to-go.html">To Go</a>
+        <a href="supplies.html">Supplies</a>
+    </nav>
+  </header>
+
+  <div>
+    <h1>To Pack</h1>
+      <ul>
+        <li>Merino wool shirt and pants</li>
+        <li>Merino wool socks and underwear</li>
+        <li>Toiletries</li>
+        <li>Sunglasses</li>
+      </ul>
+  </div>
+
+  <div>
+    <table border=1>
+      <tr>
+        <th>&nbsp;</th>
+        <th>Shirt</th>
+        <th>Pants</th>
+        <th>Socks</th>
+      </tr>
+
+      <tr>
+        <td>Red</td>
+        <td>8</td>
+        <td>2</td>
+        <td>9</td>
+      </tr>
+
+      <tr>
+        <td>White</td>
+        <td>5</td>
+        <td rowspan="2">11</td>
+        <td>9</td>
+      </tr>
+
+      <tr>
+        <td>Blue</td>
+        <td>7</td>
+        <td>4</td>
+      </tr>
+  </div>
+
+  <form name="travel-form" action="thank.html" method="post">
+    <p>Feel free to reach out if you'd like to travel together!
+    <div>
+      <label>Name:</label>
+      <input type="text" name="name">
+    </div>
+
+    <div>
+      <label>Email:</label>
+      <input type="email" name="email">
+    </div>
+
+    <div>
+      <label>Date you can leave:</label>
+      <input type="date" name="date">
+    </div>
+
+    <div>
+      <label>Date you have to return:</label>
+      <input type="date" name="date">
+    </div>
+
+    <div>
+      <label>Type of vacation you're looking for:</label>
+        <select name="dropdown">
+          <option>Tropical</option>
+          <option>Mountainous</option>
+          <option>Urban</option>
+        </select>
+    </div>
+
+    <div>
+      <textarea name="where-to-go-essay" style="width:350px;height:150px;" placeholder="Suggest a place you'd like to go and why we should go there."></textarea>
+    </div>
+
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+</body>
+</html>

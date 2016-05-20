@@ -1,3 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Enriqueta:400,700);
+
+main{
+  width: 70%;
+  display: inline-block;
+}
+/*
+#external-links {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+*/
+
 blockquote {
   border-left: 5px solid blue;
   padding: 15px;
@@ -9,14 +23,38 @@ cite {
   margin-top: 10px;
 }
 
+h1{
+  font-family: 'Enriqueta', serif;
+}
+
 #external-links ul {
   list-style-type: none;
   padding-left: 0px;
+    /* added code start*/
+  width: 25%;
+  display: inline;
+  /* added code stop */
+  font-family: 'Open Sans', sans-serif;
 }
 
+/* added code start*/
+#external-links{
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  position:absolute;
+  top:0px;
+  right:0px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* added code stop */
+
 /* you're welcome to edit the
-image, figure, and figcaption CSS if you'd like, 
+image, figure, and figcaption CSS if you'd like,
 but it's optional! */
+
+
+
 img {
   width: 100%;
 }
@@ -30,3 +68,23 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+
+
+/* media screen sets some attributes is the screen width is less than 50px*/
+@media screen and (max-width: 500px) {
+  /*turn body background yellow*/
+  body {
+    background-color: #F3A700;
+  }
+
+/*changes main display type to block and prevents overlaping on a small screen*/
+  main {
+    display: block;
+     width: 50%;
+  }
+  /*changes external-links display type to block and prevents overlaping on a small screen*/
+  #external-links {
+    display: block;
+     width: 25%;
+}
+

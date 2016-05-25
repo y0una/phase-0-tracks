@@ -1,18 +1,19 @@
-puts "What is the hamster's name?"
+puts "What's the hamster's name?"
 name = gets.chomp
 
-puts "On a volumne scale of 1 to 10 how loud is " + name + "?"
+puts "On a scale of 1 to 10 how loud is #{name}?"
 loudness = gets.chomp.to_i
 
-puts "What's " + name + "\'s fur color?"
+puts "What is #{name}'s fur color?"
 fcolor = gets.chomp
 
-puts "Is " + name + " a good candidate for adoption? [yes/no]"
-lovable = gets.chomp
+puts "Is #{name} a good candidate for adoption? [y/n]"
+should_be_adopted = gets.chomp
 
-puts "What is #{name}'s estimated age?"
+puts "What's #{name}'s estimated age?"
 age = gets.chomp
-if age.empty?
+
+if age == ""
   age = nil
 else
   age = age.to_i
@@ -20,11 +21,12 @@ end
 
 
 puts "Hamster Information"
-puts "Hamster name: " + name
-#puts "Volumne level: " + loudness
-puts "Fur color: " + fcolor
-puts "Good for adoption: " + lovable
-puts "Estimated age: #{age}"
-
-# another way to print the estimated age puts "Estimated age: " + age.to_s
-# without using string interpolation. JS doesn't have string interpolation so will have to use tht + sign
+puts "Name: #{name}"
+puts "Loudness of #{name}: #{loudness}"
+puts "Fur color: #{fcolor}"
+puts "Should be adopted: #{should_be_adopted}"
+if age == nil
+  puts "Estimated age: N/A"
+else
+  puts "Estimated age: #{age}"
+end

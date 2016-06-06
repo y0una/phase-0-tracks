@@ -53,9 +53,9 @@ end
 # Take user input of the names then store aliases
 input = ""
 hash = {} #put in hash; once exit still have access to hash
-until input == "quit"
+  until input == "quit"
   puts "Give me a first name then a last name. Type 'quit' to exit."
-  input = gets.chomp # w/e type in assign to var input
+  input = gets.chomp # w/e user types assign to var input
     if input != "quit" # until user types "quit"
       encrypted_both = both_changed(input) #assign/save return value
       hash[input] = encrypted_both #save & set input=encrypted in hash every time
@@ -63,6 +63,7 @@ until input == "quit"
     else
     end
   end # return input && encrypted_both
-  hash.each do |input, encrypted_both|
+  hash.each do |input, encrypted_both| #calls block once for each key in hsh, passing the key-value pair as parameters.
+
   p "#{encrypted_both} is actually #{input}"
 end

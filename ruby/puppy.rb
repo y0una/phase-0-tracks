@@ -17,12 +17,13 @@ Singz
 =begin
 # create new instance of puppy class. Instances:Class :: Members:Species
 class Puppy
-  p spot.class # Puppy
-  p duchess == fido #false
-  p fido.instance_of?(Array) #false
-  p fido.instance_of?(Puppy) #true
-# p spot.play_dead #undefined
 end
+
+#  p spot.class # Puppy
+#  p duchess == fido #false
+#  p fido.instance_of?(Array) #false
+#  p fido.instance_of?(Puppy) #true
+# p spot.play_dead #undefined
 
 duchess = Puppy.new # creating new instance
 fido = Puppy.new

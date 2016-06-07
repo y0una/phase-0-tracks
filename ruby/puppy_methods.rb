@@ -11,7 +11,7 @@ class Puppy
   end
 
   def roll_over
-    puts "*roll over*"
+    puts "*rolls over*"
   end
 
   def dog_years(human_years)
@@ -19,7 +19,7 @@ class Puppy
   end
 
   def run_in_circles
-    puts "*chase tail*"
+    puts "*chases tail*"
   end
 
   def initialize # runs it first
@@ -30,19 +30,19 @@ end
 
 # driver code
 
-ruby = Puppy.new # new instance
-p ruby.class
-ruby.fetch("ball")
+lola = Puppy.new # new instance
+p lola.class
+lola.fetch("ball")
 
 # running speak on class instance
-ruby.speak(3)
+lola.speak(3)
 
 # running roll_over on class instance
-ruby.roll_over
+lola.roll_over
 
-ruby.dog_years(2)
+lola.dog_years(2)
 
-ruby.run_in_circles
+lola.run_in_circles
 
 lola = Puppy.new # when new instance is created initialized method is called without explicit call
 

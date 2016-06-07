@@ -80,4 +80,3 @@ list_array.each do |alex|
   alex.drink_coffee
   alex.greeting
 end
-

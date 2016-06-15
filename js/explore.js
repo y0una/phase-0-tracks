@@ -2,6 +2,7 @@
 // Release 4: Write a JavaScript Program
 
 function reverse(string){
+if (1==1){
 // Placeholder for new string
   var newString = "";
 // Count how many characters there are in string. Subtract the index of the string's length by 1
@@ -11,6 +12,7 @@ function reverse(string){
     newString += string[i];
   }
   return newString;
+}
 }
 // Set driver code
 console.log(reverse("youna"));

@@ -41,9 +41,26 @@ function keyValueMatch(obj1, obj2) {
 
 // RELEASE 2: Generate Random Test Data
 // Pseudocode:
+// Accept an integer into the randGenerator function
+// Initialize a placeholder randArray & an alphabet string
+// Loop the number of times that was taken for integer
+      // - Save the randomly generated string into that's between 1-10 letters longs
+          // - Use a random function to generate a random string
+          // - Add that string into the randArray
+function randGenerator(int) {
+  var alphabet = "abcdefghijklmnopqrstuvwxyz";
+  var randArray = [];
 
-
-
+  for (var loopIndex=0; loopIndex<int; loopIndex++) {
+    var word = "";
+    var wordLength = Math.floor((Math.random()*10)+1);
+    for (x=0; x<wordLength; x++) {
+      word += alphabet[Math.floor(Math.random()*26)];
+    }
+    randArray.push(word);
+  }
+  return randArray;
+}
 
 
 // DRIVER CODE
@@ -63,3 +80,8 @@ console.log(keyValueMatch(object2,object3)); // => false
 console.log(keyValueMatch(object3,object4)); // => true
 
 // RELEASE 2: Generate Random Test Data
+for (var loopIndex=0; loopIndex<10; loopIndex++) {
+  array = randGenerator(10);
+  console.log(array);
+  console.log(longestString(array));
+}

@@ -1,0 +1,72 @@
+SELECT Users.*, Reviews.*, Businesses.*
+FROM Reviews
+  JOIN Users
+    ON Users.Id = Reviews.User_id
+  JOIN Businesses
+    ON Businesses.Id = Reviews.Business_id;
+
+5|Holly|Berry|1|4|It was a rager!|3|5|3|The Beagle Nightclub
+7|Denzyl|George|2|5|I'd come back here again!|1|7|1|Grundy Hollow Wedding Chapel
+4|Steven|Wonder|3|1|Too many screaming muscleheads|7|4|7|JoeBob's Sportz Barn
+
+(User Id, Comment, Biz Id, Reviews.user_id, Reviews.Business_id)
+
+
+SELECT Users.First_name, Businesses.Name, Reviews.Stars, Reviews.Comment
+FROM Reviews
+  JOIN Users
+    ON Users.Id = Reviews.User_id
+  JOIN Businesses
+    ON Businesses.Id = Reviews.Business_id;
+
+Holly|The Beagle Nightclub|4|It was a rager!
+Denzyl|Grundy Hollow Wedding Chapel|5|I'd come back here again!
+Steven|JoeBob's Sportz Barn|1|Too many screaming muscleheads
+--------------------------
+4. How do you view the data of all three tables for just one particular business?
+
+SELECT Users.*, Reviews.*, Businesses.*
+FROM Reviews
+  JOIN Users
+    ON Users.Id = Reviews.User_id
+  JOIN Businesses
+    ON Businesses.Id = Reviews.Business_id
+WHERE Businesses.Name = "The Beagle Nightclub"
+
+5|Holly|Berry|1|4|It was a rager!|3|5|3|The Beagle Nightclub
+6|Merryl|Streepman|4|2|The drinks were horrible!|3|6|3|The Beagle Nightclub
+
+--------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Other Explorations:
+
+SELECT Users.*, Reviews.*, Businesses.*
+FROM Reviews
+  JOIN Users
+    ON Users.Id = Reviews.User_id
+  JOIN Businesses
+    ON Businesses.Id = Reviews.User_id;
+
+
+SELECT Users.Id, Reviews.Business_id, Reviews.User_id, Businesses.Id
+FROM Reviews
+  JOIN Users
+    ON Users.Id = Reviews.User_id
+  JOIN Businesses
+    ON Businesses.Id = Reviews.Business_id;

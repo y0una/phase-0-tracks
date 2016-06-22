@@ -1,4 +1,5 @@
 Release 2: View a Many-to-Many Relationship
+Pairs: Peter Duke | Youna Yang
 
 2. You've joined two tables before. How do you join three?
 

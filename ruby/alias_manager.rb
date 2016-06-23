@@ -63,7 +63,7 @@ hash = {} #put in hash; once exit still have access to hash
     else
     end
   end # return input && encrypted_both
-  hash.each do |input, encrypted_both| #calls block once for each key in hsh, passing the key-value pair as parameters.
+  hash.each do |input, encrypted_both| #calls block once for each key in hash, passing the key-value pair as parameters.
 
   p "#{encrypted_both} is actually #{input}"
 end

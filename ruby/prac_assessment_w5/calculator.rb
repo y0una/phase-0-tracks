@@ -15,6 +15,24 @@ def calculate_from_user_input()
   end
 end
 
+$alphabet_array = "abcdefghijklmnopqrstuvwxyz".split("")
+def check_num(int, int2)
+  if $alphabet_array.include? int.to_s
+    puts "Please type a number"
+  elsif
+    $alphabet_array.include? int2.to_s
+    puts "Please type a number"
+  else
+  end
+end
+
+def check_oper(oper)
+operators = ["+", "-", "*", "/"]
+  unless operators.include? oper
+  puts "Please use an operator"
+  end
+end
+
   def calculate(int, oper, int2)
     if oper == '+'
       return int + int2 #returns back to calc_from_user_input

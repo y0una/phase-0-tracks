@@ -1,0 +1,44 @@
+# 1. Name at least three categories of CSS adjustments (example: colors)?
+* background color, margin, text-align, width, font-family, line-height
+
+# 2. What are the three ways to link a CSS rule to an HTML document? Which one is the best and why?
+*  External Style Sheet: In the head section of the html file include a link to the name of the css style file by making it equal to an href “<link rel="stylesheet" type="text/css" href="style.css"/>” This is the best way since changing one external style sheet file can change the entire look of the site.
+* Internal Style Sheet: When a single document has a particular style we can include an internal style tag in the head of the html file itself and add css there “<head><style> …</style></head>”
+* Inline styles: has the highest priority and will override all other styles. This is to be used only when really necessary since it doesn’t take advantage of style sheets
+<div style="color:#999999; margin-left:10px;"><p>Lorem ipsum dolor paragraph.</p></div>
+----
+# 3. What is a selector? Give examples of at least three types of selectors.
+
+* Selectors are patterns used to select the elements that we want to style. Ex: .class, #id, :hover, div > p (selects all p elements where parent is a div element)
+
+----
+# 4. What is the box model?
+* Box model is a box that wraps around all HTML elements. First is the padding, then border, then margin
+
+----
+# 5. Explain and give an example of the cascading effect of CSS.
+* Styles cascade into a digital style sheet from the
+Browser default styles,
+Styles specified by a user who is reading document,
+External stylesheet by creator,
+Internal stylesheet by creator, and
+lastly inline style where inline style by creator.
+The viewers style changes the browser default style. The doc creator’s style then changes the style further
+
+----
+# 6. Name two CSS techniques that assist in responsive design.
+
+* Max-width container can be specified for an element:
+.container { width: 800px; max-width: 90%; } No matter what size it will only take up 90% of the width
+
+* Min-width sets the minimum width to prevent elements from getting too small when scaled
+.container{ min-width:140px}
+
+* Relative Values (Margin, Font Size, Padding)
+Percentages allow the css to scale down naturally
+body {margin-left: auto;
+margin-right: auto;
+max-width: 90%}
+
+* Word break: the word-wrap property can make a single long text to wrap
+word-wrap:break-word;

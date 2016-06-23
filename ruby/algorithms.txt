@@ -1,0 +1,36 @@
+HOW TO USE AN ELEVATOR
+
+1. Is there an elevator request?
+> Yes, next question
+> No, do nothing
+
+2. What floor am I (elevator) currently on?
+> Store floor number [x], next question
+
+3. Is the direction of request going up or down from current floor?
+> Higher than current, move up until reach floor then open for 10 seconds
+> Lower than current, move down until reach floor then open for 10 seconds
+
+4. Is there a selection(s) on which floor to go to?
+> Yes, next question
+> No, say "Select the floor you'd like to go"
+
+5. Is there more than 1 floor selected going [in direction up or down]?
+> Yes, order the floors that are selected, stop at each floor in ascending or desending order for 10 seconds | No, move elevator to that one floor and open for 10 seconds
+
+6. Back to first question
+
+----
+GOING TO THE BATHROOM
+
+1. Do you have an urge to go to the bathroom (y/n)?
+> Yes, see next question
+> No, go back to what you're doing
+
+2. Am I at home (y/n)?
+> Yes, walk down the hall to bathroom
+> No, go find a bathroom
+
+3. Is there someone in the bathroom already?
+> No, walk in use bathroom
+> Yes, wait 5 minutes and check again.

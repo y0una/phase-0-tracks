@@ -1,0 +1,52 @@
+Variables
+1. What is a variable? Why might a programmer use a variable?
+- Variable is a basic type of contrainer to store data. Can be accessed throughout the program and changed
+
+2.Ruby will first replace first_name with "Abraham" then replace last_name with "Lincoln"
+
+Data Types
+3.
+String - holds and manipulates the sequence of bytes typcially characters that represent human language
+Integer - is a number without decimal points
+Float - float is a number with decimal points
+Nil - no data
+Boolean - true or false
+
+Algorithms
+4. What is an algorithm?
+- step by step procedue for calculations. Used for calculation, data processing, and automated reasoning
+
+5. What are two common categories of algorithm in computer science?
+- Divide and Conquer Algorithm: divides the problem into smaller subproblems of the same type and solves subproblems into a solution that address the original problem
+- Dynamic Programming Algorithm: remembers past results and uses them to find new results
+
+Methods
+6. What is a method? Why might a programmer choose to use a method?
+- Set of procedure(s) that we can call to execute a certain actions. Programmers might choose to use a method to save time and reuse a program. Methods are automated to quickly find a solution and return a value.
+
+7. Define the following terms as the relate to a method
+Return Value: last expression evaulated
+Side Effect: method or function can have a side effect when it changes some state. Modificaiton to fucntion that's not the return
+Parameter: variable in the declariation of function
+Argument: argument is actual value of variable that's passed into function
+Implicit Return: returns the last value evaluated
+
+8. What are global scope and method scope? How do those scopes impact the availability of data at different points in a program?
+- Global Scope that covers the entire program. Global scope is enjoyed by global variables, which are recognizable by their initial $
+- Method Scope is scoped inside a particular method
+
+Control Flow
+9. What is control flow? Why might a programmer choose to use flow control?
+- Control flow: Conditionals and loops change the flow of a Ruby program. Conditionals are keywords that execute a certain statement under a specific condition. Loops are blocks of program that are executed many times. When the program runs, the statements are executed one by one from top to bottom.
+
+10. Define the following terms as they relate to flow control.
+loop
+if: if statement checks if an expression is true. If true, a statement is then executed. The statement can be a single statement or a compound statement. A compound statement consists of multiple statements enclosed
+
+else: Creates a simple branch. If the if keyword segment is false, the statement after the else keyword is automatically executed.
+
+elsif: This keyword tests for another condition if and only if the previous condition was not met. We can use multiple elsif keywords in our tests.
+
+while: while loop stops when condition is false
+
+until: loop stops when condition is true

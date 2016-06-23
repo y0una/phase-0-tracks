@@ -1,0 +1,61 @@
+Data Structures
+1. Why are data structures useful in programming?
+- Data Structures are they way we organize information which can have a lot of impact on the performance. They help write efficient code and solve problems in optimal ways. Data structures help structure code, so that it can be maintained more easily with better implementation.
+
+Arrays
+2. Define "array" and describe the characteristics of an array.
+- An array is a data structure that contains a group of elements. The elements are all of the same data type, such as an integer or string. Arrays are commonly used in computer programs to organize data so that a related set of values can be easily sorted or searched.
+
+3. Give two original examples of data sets that an array might be well-suited for.
+- list of employees in a company
+- types of produce in a grocery store
+
+Hashes
+4. Define "hash" and describe the characteristics of a hash.
+- Collection of unique keys and their values like a dictionary
+similar to an array but array is in a particular order but an item in hash can be searched for directly
+- They are similar to Arrays, can also be called associative arrays, but where an Array uses integers as its index, a Hash lets you to use any object type.
+
+5. Give two original examples of data sets that a hash might be well-suited for.
+- e.g.: 
+produce_count = {
+   “peppers” => 10,
+   “onions” => 12,
+   “tomatoes” => 4
+  }
+- e.g.:
+employee_loctions = {
+   “SF” => 109
+   “NYC” => 81
+   “D.C.” => 67
+   “Portland” => 77
+   “Seattle” => 48
+}
+
+Iteration
+6. Why is iteration useful?
+- Programs have loops of instructions that can be executed over and over again to determine values for one or more variables. Iterations are useful to perform specific tasks, solve problems, and present solutions. 
+
+7. Give an example of a real-life task that would require iteration if you wrote an algorithm for it.
+- Example would be figuring out the number of days between the first day and last day of DBC excluding weekends. The function would check each day to see if it’s a weekday or weekend until every day is checked.
+
+Blocks
+8. What is a block?
+- Blocks are a way to group code and considered objects. You can use a do..end statement or surround the code in curly braces: {}. 
+- examples that do the same thing:
+2.times { puts 'hi' }
+2.times do
+  puts 'hi'
+end
+
+9. What is a block parameter, and where does its value come from?
+- The variable in between the pipes in this case “n” (|n|) is the block parameter. It’s value comes from array it is given, in this case first 1, then 2, then 3.
+e.g.:
+[1, 2, 3].each do |n|
+  puts "Number #{n}"
+end
+e.g.:
+[1, 2, 3].each {|n| puts "Number #{n}"}
+
+
+Rubric

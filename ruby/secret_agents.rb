@@ -1,24 +1,30 @@
 # Hi!
 
 =begin
-scope - where in a program a variable is accessible; which var access where
+Scope
+- where in a program a variable is accessible; which var access where
 
-local variable - specific to only small pieces of environment; unique to method; can't access outside of method
-- local in method or loop can't be accessed outside; must begin with lowercase letter
- - only within method
+Local Variable
+- Specific to only small pieces of environment; unique to method; can't access outside of method
+- Local in method or loop can't be accessed outside; must begin with lowercase letter
+- Only within method
 
-global variable - applies to entire coding environment funcitons inside functions can use
-
+Global Variable
+- Applies to entire coding environment funcitons inside functions can use
   ex: $welcome = "Welcome to Ruby Essentials"
 - anywhere
 
-implicit return: whatever is last in function will be returned even if you don't "return" it
+Implicit return
+- Whatever is last in function will be returned even if you don't "return" it
 
-side effect:
-  modification you make to program that's not the return; change value of global var but not have it be what function returns; not the direct function but process to get to d
+Side Effect
+- modification you make to program that's not the return
+- change value of global var but not have it be what function returns; not the direct function but process to get to d
 - any time change something outside of function
 
-return value: what you're tyring to find out
+Return Value
+- What you're tyring to find out
+
 =end
 
 
@@ -102,7 +108,7 @@ def encrypt(my_string)
     if $alphabet.index(my_string[i]) == nil
       #do nothing
     elsif $alphabet.index(my_string[i]) == 25
-      new_string[i] = "a"
+      new_string = new_string + "a"
     else
       new_string[i] = my_string[i].next
     end
@@ -112,11 +118,11 @@ def encrypt(my_string)
   return new_string
 end
 
-#puts encrypt("abc")
-#puts encrypt("zed")
-#puts encrypt("zed abc")
+puts encrypt("abc")
+puts encrypt("zed")
+puts encrypt("zed abc")
 
-
+=begin
 
 def decrypt(my_string)
   i = 0
@@ -134,6 +140,8 @@ def decrypt(my_string)
 
   return new_string
 end
+
+=end
 
 #puts decrypt("bcd")
 #puts decrypt("afe")
@@ -154,6 +162,8 @@ INTERFACE UPGRADE
 - Print the result of the selected method
 
 =end
+
+=begin
 
 result = nil
 
@@ -176,7 +186,7 @@ end
 puts "You entered [#{password}] as your password."
 puts "Your #{pref}ed password is [#{result}]."
 
-
+=end
 
 =begin
 DECRYPT method

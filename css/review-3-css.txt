@@ -22,6 +22,19 @@ Internal stylesheet by creator, and
 lastly inline style where inline style by creator.  
 The viewers style changes the browser default style. The doc creator’s style then changes the style further
 
+“5. The cascading effect of CSS means that if an element has multiple selectors that apply to it, and some of the rules within the selectors contradict each other, the rule of the most specific selector will be applied first. For example, all paragraphs on a page may be given a set of rules using “p” as a selector. This could appear as:
+p {
+  text-alignment: justify;
+  color: #FFFFFF;
+  font-size: 1em;
+  margin: 10px;
+}
+Then, the developer may want the first paragraph to appear the same way, but with slightly larger text, so they include the following:
+p:first-of-type {
+  font-size: 1.5em;
+}
+Because the second selector is more specific than the first, and contradicts the “font-size” rule of the first, the cascading nature of CSS will override the font-size rule of the more general selector with the font-size rule of the more specific selector, while still inheriting all other non-contradicted rules from the more general selector.”
+
 6. Name two CSS techniques that assist in responsive design.
 
 - Max-width container can be specified for an element:
@@ -38,3 +51,5 @@ max-width: 90%}
 
 - Word break: the word-wrap property can make a single long text to wrap 
 word-wrap:break-word;
+
+“Two CSS techniques that assist in responsive design are performing media queries, and using percentages instead of pixel numbers. Media queries can be used to apply different rules to elements depending on the size of the screen that the content is being viewed on. This can be simple, such as changing the font-size of headings, or more complex changes, such as a whole new lay-out to the site, optimized for the narrow screens seen on smartphones. Using percentages instead of pixel numbers allows things to appear exactly the same way no matter the pixel size of the screen. This helps to preserve the intended look of a given layout.”

@@ -1,4 +1,4 @@
-# paired with Emilia Friedberg
+# paired with
 class Puppy
 
   def fetch(toy)

@@ -1,0 +1,44 @@
+1. What are classes? Be sure to define the following terms in your explanation and describe the relationships between them:
+
+Class - is a mini program with it’s own methods (functions) and properties (variables)
+e.g. in a Class “Human”
+- would have functions like sleep, speak, breathe and 
+- data like arms, legs, and eyes
+- description of a group of objects with common properties (attributes), behavior (operations)
+
+State - It’s determined by the values of attributes at a particular time that a program has access. The output of a program is determined by the input and state. 
+
+Behavior - refers to how objects interact with each other
+For e.g. in a Class such as Course, there would be Behavior like: Add Student, Delete Student, Get Course Roster, Determine If Full
+
+Instance Variable - is a variable defined in a specific class. It’s value can change, depending on conditions or on information passed to the program
+
+Instance Method - is a function that is attached to a specific class
+
+2. What are attributes?
+- Attributes are a property of an object, which is visible outside. As a shortcut. attr_accessor : variable1 can be used to create an setter attribute. attr_reader: variable2 creates a setter attribute. 
+
+3. Give an example of a real world object, and describe how you might assign its attributes if you were to design a class to represent that object.
+
+Tennis Player
+
+Characteristics
+- Height: 5’ 10in
+- Weight: 170
+- Years playing: 15
+- Backhand: one-handed
+
+Behavior:
+- Topspin
+- Serve
+- Volley
+
+4. What is the purpose of the initialize method? When does it run?
+- It prepares the objects inside to be used, often accepting arguments. Also helps for code readability. In the beginning when we define initialize as a special method it will be run every time we create a new instance of the class. For example, when we call Hello.new to create a new Hello object Ruby creates an initialized object and then calls that object’s initialize method, passing in any parameters that were passed to new. 
+
+5. What are modules?
+- Modules are similar to classes and group together methods, and other module and class definitions. Instead of the “class” keyword preceding the name “module” keyword is used. 
+
+6. What are the different ways you can use a module?
+- namespace: lets us define methods what prevent name classes
+- mixins: lets us share functionality between classes. If a class mixes in a module the module’s instance method becomes available like it’s been defined in the class. It gets mixed in.
